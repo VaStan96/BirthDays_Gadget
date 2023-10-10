@@ -1,0 +1,32 @@
+BirthDays_Gadget
+-\-\-Ivan Stanchenko-/-/- 
+
+
+BirthDays_Gadget_v1.1 (07.2023)
+
+A desktop widget for Windows to display the birthdays of your relatives, 
+friends and colleagues.
+- Information is collected from a CSV file, which makes it possible to 
+import names and dates as a list at once.
+- To add names and dates one by one, use the "+" button.
+- Updating is carried out automatically every 2 hours or by clicking on 
+the "Update" button.
+- You can close the widget using the context menu in the tray.
+
+BirthDays_Gadget_v1.2 (10.2023)
+
+Update the desktop widget for Windows to display the birthdays of your relatives,
+friends and colleagues.
+- Added input validation to the "Add" window.
+- A button with a calendar has been added to the “Add” window 
+for selecting a date by clicking.
+- In the "Settings" window, patterns for widget placement on the 
+desktop have been added.
+- In the "Settings" window, a choice of various languages has been added.
+- In the "Settings" window, a choice of widget update time has been added.
+- In the "Settings" window, adding a widget to Windows startup 
+has been added.
+- In the "Settings" window, automatic checking for updates 
+on GitHubhas been added.
+- In the "Settings" window, selecting the source file using 
+"Explorer" has been added.

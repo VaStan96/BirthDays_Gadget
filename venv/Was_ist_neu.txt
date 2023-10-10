@@ -1,0 +1,33 @@
+BirthDays_Gadget
+-\-\-Ivan Stanchenko-/-/-
+
+
+BirthDays_Gadget_v1.1 (07.2023)
+
+Desktop-Widget für Windows zur Anzeige der Geburtstage Ihrer Verwandten,
+Freunde und Kollegen.
+- - Die Informationen werden aus einer CSV-Datei gesammelt, sodass Sie 
+viele Namen und Daten gleichzeitig als Liste importieren können.
+- Um Namen und Daten einzeln hinzuzufügen, verwenden Sie die Schaltfläche „+“.
+- Updates werden automatisch alle 2 Stunden oder durch Klicken auf 
+die Schaltfläche „Update“ durchgeführt.
+– Sie können das Widget über das Kontextmenü im Tray schließen.
+
+BirthDays_Gadget_v1.2 (10.2023)
+
+Aktualisieren Sie Ihr Desktop-Widget für Windows, um die Geburtstage 
+Ihrer Verwandten, Freunde und Kollegen anzuzeigen.
+- Im Fenster „Hinzufügen“ wurde die Eingabevalidierung hinzugefügt.
+- Im Fenster „Hinzufügen“ wurde eine Schaltfläche mit einem Kalender 
+hinzugefügt, mit der Sie durch Klicken ein Datum auswählen können.
+- Im Fenster „Einstellungen“ wurden die Muster für die Widget-Platzierung 
+auf dem Desktop hinzugefügt.
+- Im Fenster „Einstellungen“ wurden verschiedene Sprachen hinzugefügt.
+- Im Fenster „Einstellungen“ wurde eine Auswahl für die Aktualisierungszeit 
+des Widgets hinzugefügt.
+- Im Fenster „Einstellungen“ wurde die Einbindung des Widgets 
+in den Windows-Start hinzugefügt.
+– Im Fenster „Einstellungen“ wurde die automatische Suche nach Updates 
+auf GitHub hinzugefügt.
+- Im Fenster „Einstellungen“ wurde die Auswahl der Quelldatei 
+über „Explorer“ hinzugefügt
