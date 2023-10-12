@@ -1,6 +1,0 @@
-Position 3
-Language 2
-Path C:/Users/vasta/PycharmProjects/BirthDays_Gadjet_v1/venv/Dates.csv
-Freq 7200000
-StartUp 0
-AutoUpdate 0

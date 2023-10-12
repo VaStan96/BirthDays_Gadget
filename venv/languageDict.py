@@ -18,7 +18,7 @@ LangDict = {
 'AddDateTip':['Date in the form "dd.mm.yyyy"', 'Datum im Format „tt.mm.jjjj“', 'Дата в формате "дд.мм.гггг"'],
 'SaveBut':['Save', 'Speichern', 'Сохранить'],
 'SaveTip':['Save changes', 'Änderungen speichern', 'Сохранить изменения'],
-'InfoPath':['Whats_new.txt', 'Was_ist_neu.txt', 'Что_нового.txt'],
+'InfoPath':['.\Data\Whats_new.txt', '.\Data\Was_ist_neu.txt', '.\Data\Что_нового.txt'],
 'SetLabel':['Settings', 'Einstellungen', 'Настройки'],
 'PosLabel':['Position on the desktop:', 'Auf dem Desktop positionieren:', 'Позиция на рабочем столе:'],
 'LangLabel':['Language:', 'Sprache:', 'Язык:'],
@@ -36,5 +36,7 @@ LangDict = {
 'NewVerTitle':['BirthDays_Gadjet! A new version!', 'BirthDays_Gadjet! Eine neue Version!', 'BirthDays_Gadjet! Новая версия!'],
 'NewVerText':['An update has arrived!<br>You can download the latest version from the link:<br>', 'Ein Update ist da!<br>Sie können die neueste Version über den Link herunterladen:<br>', 'Появилось обновление!<br>Вы можете скачать свежую версию по ссылке:<br>'],
 'UpdateTimeWord':[['1 Hour', '2 Hour', '6 Hour', '12 Hour', '1 Day'], ['1 Stunde', '2 Stunde', '6 Stunde', '12 Stunde', '1 Tag'], ['1 Час', '2 Часа', '6 Часов', '12 Часов', '1 День']],
-'UpdateTimeNum':[[10000, 7200000, 21600000, 43200000, 86400000]]
+'UpdateTimeNum':[[3600000, 7200000, 21600000, 43200000, 86400000]],
+'CSVErrorText':['Check your CSV file!','Überprüfen Sie Ihre CSV-Datei!','Проверьте ваш CSV-файл!'],
+'CSVErrorTitle':['Error!','Fehler!','Ошибка!']
 }

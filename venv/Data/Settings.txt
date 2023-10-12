@@ -1,0 +1,6 @@
+Position 3
+Language 0
+Path .\Data\
+Freq 7200000
+StartUp 0
+AutoUpdate 0

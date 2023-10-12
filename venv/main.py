@@ -2,20 +2,18 @@ import sys
 
 import qtawesome as qta
 
-from PyQt5.QtWinExtras import QtWin  # !!!
-from PyQt5.QtGui import QIcon, QPixmap, QColor, QCloseEvent, QRegExpValidator, QFont
-from PyQt5.QtCore import Qt, QSize, QThread, QMetaObject, QTimer, QRegExp, pyqtSlot, QObject, QDate
+from PyQt5.QtGui import QIcon, QColor, QRegExpValidator
+from PyQt5.QtCore import Qt, QSize, QTimer, QRegExp, pyqtSlot, QDate
 from PyQt5.QtWidgets import *
 
 import parsing, adding, languageDict
 import startUp as StartUpPy
 import autoUpdate as AutoUpdatePy
 import re
-import time
 
 def ReadSettings():
 
-    with open('Settings.txt', mode='r') as save_file:
+    with open('.\Data\Settings.txt', mode='r') as save_file:
         reader = save_file.read()
         for line in reader.split('\n'):
             if line.split(' ')[0] == 'Position':
@@ -35,11 +33,11 @@ def ReadSettings():
 
 def SaveSettings(gadjetPosition, gadjetLanguage, fileName, updateTime, startUp, autoUpdate):
     save_text = f"Position {gadjetPosition}\nLanguage {gadjetLanguage}\nPath {fileName}\nFreq {updateTime}\nStartUp {startUp}\nAutoUpdate {autoUpdate}\n"
-    with open('Settings.txt', mode='w') as save_file:
+    with open('.\Data\Settings.txt', mode='w') as save_file:
         writer = save_file.write(save_text)
 
 #GlobalVariable
-with open('Version.txt', mode='r') as file:
+with open('.\Data\Version.txt', mode='r') as file:
     lines = file.readlines()
     appName = lines[0].split(' ')[0]
 
@@ -52,7 +50,7 @@ autoUpdate = None
 
 gadjetPosition, gadjetLanguage, fileName, updateTime, startUp, autoUpdate = ReadSettings()
 if gadjetPosition == None or gadjetLanguage == None or fileName == None or updateTime == None or startUp == None or autoUpdate == None:
-    fileName = 'Dates.csv'
+    fileName = '.\Data\Dates.csv'
     updateTime = 7200000
     gadjetLanguage = 0
     gadjetPosition = 3
@@ -121,7 +119,7 @@ class PreviewWindow(QWidget):
         self.setFixedSize(self.windowWidth, self.windowHeight)
 
 
-        self.tray_icon = SystemTrayIcon(QIcon('icon.png'), self)
+        self.tray_icon = SystemTrayIcon(QIcon('.\Data\icon.png'), self)
         self.tray_icon.setToolTip(appName)
         self.tray_icon.activateWindowEvent = self.toggle_window
         self.tray_icon.show()
@@ -209,8 +207,8 @@ class PreviewWindow(QWidget):
 
 
     def data_input(self):
-        global fileName
-        items = parsing.sort_csv(fileName)
+        global fileName, gadjetLanguage
+        items = parsing.sort_csv(fileName, gadjetLanguage)
         for x in range(len(items)):
             if items[x][3] < 0:
                 for y in range(4):
@@ -517,7 +515,7 @@ class SettingWindow(QWidget):
         autoUpdate = int(self.AutoUpdateBox.isChecked())
 
         SaveSettings(gadjetPosition, gadjetLanguage, fileName, updateTime, startUp, autoUpdate)
-        if self.FlagChangedStartUpBox == True:
+        if self.FlagChangedStartUpBox:
             if startUp == 1:
                 StartUpPy.TurnOnStartUp()
             else:
@@ -544,7 +542,7 @@ class AddWindow(QWidget):
         self.setFixedSize(500, 300)
 
         self.text = languageDict.LangDict['AddLabel'][gadjetLanguage]
-        self.path = languageDict.LangDict['AddLabel2'][gadjetLanguage] + ' ' + fileName
+        self.path = languageDict.LangDict['AddLabel2'][gadjetLanguage] + '\n' + fileName
         self.firstPunkt = languageDict.LangDict['AddNameLabel'][gadjetLanguage]
         self.secondPunkt = languageDict.LangDict['AddDateLabel'][gadjetLanguage]
 
@@ -556,7 +554,7 @@ class AddWindow(QWidget):
         self.PathLabel = QLabel(self)
         self.PathLabel.setText(self.path)
         self.PathLabel.setAlignment(Qt.AlignLeft)
-        self.PathLabel.setStyleSheet("font-size: 14px; font-weight: bold")
+        self.PathLabel.setStyleSheet("font-size: 12px; font-weight: bold")
 
         self.FirstPunktLabel = QLabel(self)
         self.FirstPunktLabel.setText(self.firstPunkt)
@@ -609,7 +607,7 @@ class AddWindow(QWidget):
         self.layout = QVBoxLayout()
         self.layout.setContentsMargins(20, 20, 20, 10)
         self.layout.addWidget(self.WinLabel)
-        self.layout.addSpacing(60)
+        self.layout.addSpacing(30)
         self.layout.addWidget(self.PathLabel)
         self.layout.addSpacing(10)
         self.layout.addWidget(self.FirstPunktLabel)
@@ -709,25 +707,25 @@ class ButtonButton(PreviewWindow):
         addButton = QPushButton()
         addButton.clicked.connect(self.addDay)
         addButton.setFixedSize(self.SmallButSize)
-        addButton.setIcon(QIcon('add.png'))
+        addButton.setIcon(QIcon('.\Data\\add.png'))
         addButton.setToolTip(languageDict.LangDict['AddTip'][gadjetLanguage])
 
         updateButton = QPushButton()
         updateButton.clicked.connect(self.Update)
         updateButton.setFixedSize(self.SmallButSize)
-        updateButton.setIcon(QIcon('up.png'))
+        updateButton.setIcon(QIcon('.\Data\up.png'))
         updateButton.setToolTip(languageDict.LangDict['RefreschTip'][gadjetLanguage])
 
         settingsButton = QPushButton()
         settingsButton.clicked.connect(self.setting)
         settingsButton.setFixedSize(self.SmallButSize)
-        settingsButton.setIcon(QIcon('setting.png'))
+        settingsButton.setIcon(QIcon('.\Data\setting.png'))
         settingsButton.setToolTip(languageDict.LangDict['SetTip'][gadjetLanguage])
 
         infoButton = QPushButton()
         infoButton.clicked.connect(self.info)
         infoButton.setFixedSize(self.SmallButSize)
-        infoButton.setIcon(QIcon('info.png'))
+        infoButton.setIcon(QIcon('.\Data\info.png'))
         infoButton.setToolTip(languageDict.LangDict['InfoTip'][gadjetLanguage])
 
         layout.addWidget(closeButton)

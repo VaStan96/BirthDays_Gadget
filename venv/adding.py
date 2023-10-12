@@ -4,7 +4,7 @@ import csv
 def add_csv(path, name, date):
     test_csv(path)
     with open(path, mode='a', newline='', encoding='utf-8') as csv_file:
-        csv_writer = csv.writer(csv_file, delimiter='\t')#, lineterminator='')
+        csv_writer = csv.writer(csv_file, delimiter='\t')
         csv_writer.writerow([name, date])
 
 def test_csv(path):

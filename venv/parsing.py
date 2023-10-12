@@ -1,10 +1,9 @@
-from datetime import datetime, timedelta
-from bs4 import BeautifulSoup
+from datetime import datetime
 import csv
 from PyQt5.QtWidgets import QMessageBox
-from PyQt5.QtCore import QSize
+import languageDict
 
-def pars_csv(path):
+def pars_csv(path, lang):
     Birthdays = []
     today = datetime.date(datetime.today())
 
@@ -27,17 +26,17 @@ def pars_csv(path):
         csvfile.close()
     except:
         msgbox = QMessageBox()
-        msgbox.setText('Check your .CSV-file!')
+        msgbox.setText(languageDict.LangDict['CSVErrorText'][lang])
         msgbox.setStandardButtons(QMessageBox.Close)
         msgbox.setIcon(QMessageBox.Critical)
-        msgbox.setWindowTitle('ERROR')
+        msgbox.setWindowTitle(languageDict.LangDict['CSVErrorTitle'][lang])
         msgbox.exec()
         Birthdays = []
 
     return Birthdays
 
-def sort_csv(path):
-    Birthdays = pars_csv(path)
+def sort_csv(path, lang):
+    Birthdays = pars_csv(path, lang)
     sort_data = sorted(Birthdays, key=lambda x: x[2])
     minus = [[i[0], i[1], i[2] - 366, i[3]-1] for i in sort_data[-2:]]
     data = list(reversed(minus + sort_data[:5]))
@@ -45,4 +44,4 @@ def sort_csv(path):
     return data
 
 # if __name__ == '__main__':
-#     print(sort_csv('new.csv'))
+#     print(sort_csv('Dates.csv'))
