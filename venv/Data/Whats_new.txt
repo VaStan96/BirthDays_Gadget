@@ -13,7 +13,7 @@ import names and dates as a list at once.
 the "Update" button.
 - You can close the widget using the context menu in the tray.
 
-BirthDays_Gadget_v1.2 (10.2023)
+BirthDays_Gadget_v1.3 (10.2023)
 
 Update the desktop widget for Windows to display the birthdays of your relatives,
 friends and colleagues.
