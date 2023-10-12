@@ -713,7 +713,7 @@ class ButtonButton(PreviewWindow):
         updateButton = QPushButton()
         updateButton.clicked.connect(self.Update)
         updateButton.setFixedSize(self.SmallButSize)
-        updateButton.setIcon(QIcon('.\Data\up.png'))
+        updateButton.setIcon(QIcon('.\Data\\up.png'))
         updateButton.setToolTip(languageDict.LangDict['RefreschTip'][gadjetLanguage])
 
         settingsButton = QPushButton()
