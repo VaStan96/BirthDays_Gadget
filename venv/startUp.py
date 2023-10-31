@@ -1,26 +1,29 @@
 import sys
 import os
-import shutil
+from win32com.client import Dispatch
 
 def TurnOnStartUp():
     path = sys.argv[0]
     path = path.replace('/', '\\')
-    file_name = path.split('\\')[-1]
+    file_name = 'BirthDays_Gadjet.lnk' #path.split('\\')[-1]
     user_name = os.getenv('username')
     startup_path = f'C:\\Users\\{user_name}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\\'
 
     files = os.listdir(startup_path)
     if file_name not in files:
-        shutil.copy(path, startup_path) # Copy .exe in dir StartUp
+        shell = Dispatch('WScript.Shell')
+        shortcut = shell.CreateShortCut(startup_path+file_name)
+        shortcut.Targetpath = path
+        shortcut.save()
 
 
 def TurnOffStartUp():
     path = sys.argv[0]
     path = path.replace('/', '\\')
-    file_name = path.split('\\')[-1]
+    file_name = 'BirthDays_Gadjet.lnk' #path.split('\\')[-1]
     user_name = os.getenv('username')
     startup_path = f'C:\\Users\\{user_name}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\\'
 
     files = os.listdir(startup_path)
     if file_name in files:
-        os.remove(f'{startup_path+file_name}') # Delete .exe in dir StartUp
+        os.remove(f'{startup_path+file_name}') # Delete .lnk in dir StartUp
