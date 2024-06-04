@@ -1,0 +1,128 @@
+        QWidget{
+            background: #31363b;
+        }
+        QLabel{
+            color: #ffffff;
+        }
+        QPushButton{
+            color: #fff;
+        }
+        QHeaderView::section {
+            background-color: #31363b;
+            padding: 4px;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        QTableWidget {
+            gridline-color: #fff;
+            color: #fff;
+        }
+        QTextEdit {
+            color: #fff;
+        }
+        QLineEdit {
+            color: #fff;
+        }
+        QTableView {
+            background-color: #454a4f;
+            gridline-color: #fff;
+            color: #fff;
+        }
+        QTableView QTableCornerButton::section {
+            background-color: #31363b;
+            border: 1px solid #fff;
+        }
+        QTableView::item:selected {
+            background-color: #76797c;
+            color: #31363b;
+        }
+        QRadioButton {
+            color: #fff;
+        }
+        QRadioButton::indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 7px;
+        }
+         QRadioButton::indicator::checked {
+            background-color: #fff;
+            border: 2px solid #fff;
+        }
+        QRadioButton::indicator:unchecked {
+            background-color: #31363b;
+            border: 2px solid #fff;
+        }
+        QComboBox {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        QComboBox QAbstractItemView {
+            background-color: #31363b;
+            color: #fff;
+            selection-background-color: #76797c;
+            selection-color: #31363b;
+        }
+        QCheckBox {
+            color: #fff;
+        }
+        QCheckBox::indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 7px;
+        }
+        QCheckBox::indicator::unchecked {
+            background-color: #31363b;
+            border: 2px solid #fff;
+        }
+        QCheckBox::indicator:checked {
+            background-color: #fff;
+            border: 2px solid #fff;
+        }
+        QCalendarWidget { /* фон */
+            background-color: #31363b;
+        }
+        QCalendarWidget QToolButton { /* стрелки и месяц+год */
+            color: #fff;
+            font-size: 16px;
+            selection-background-color: #76797c;
+            selection-color: #31363b;
+        }
+        QCalendarWidget QAbstractItemView:enabled { /* даты */
+            background-color: #31363b;
+            color: #fff;
+            selection-background-color: #76797c;
+            selection-color: #31363b;
+            border: 2px solid #fff;
+        }
+        QCalendarWidget QAbstractItemView:disabled { /* даты других месяцев */
+            color: #76797c;
+        }
+        QCalendarWidget QToolButton#qt_calendar_prevmonth {/* Скачать стрелки!!!! */
+            icon-size: 30px;
+            qproperty-icon: url(Data/l_arrow_dark.png);
+        }
+        QCalendarWidget QToolButton#qt_calendar_nextmonth {
+            icon-size: 30px;
+            qproperty-icon: url(Data/r_arrow_dark.png);
+        }
+        QCalendarWidget QMenu {
+            background-color: #31363b;
+            color: #fff;
+            selection-background-color: #76797c;
+            selection-color: #31363b;
+        }
+        QPushButton#addButton {
+            qproperty-icon: url(Data/add_dark.png);
+        }
+        QPushButton#updateButton {
+            qproperty-icon: url(Data/up_dark.png);
+        }
+        QPushButton#settingsButton {
+            qproperty-icon: url(Data/setting_dark.png);
+        }
+        QPushButton#infoButton {
+            qproperty-icon: url(Data/info_dark.png);
+        }
+        QPushButton#listButton {
+            qproperty-icon: url(Data/list_dark.png);
+        }
