@@ -13,6 +13,8 @@ viele Namen und Daten gleichzeitig als Liste importieren können.
 die Schaltfläche „Update“ durchgeführt.
 – Sie können das Widget über das Kontextmenü im Tray schließen.
 
+
+
 BirthDays_Gadget_v1.3 (10.2023)
 
 Aktualisieren Sie Ihr Desktop-Widget für Windows, um die Geburtstage 
@@ -31,3 +33,14 @@ in den Windows-Start hinzugefügt.
 auf GitHub hinzugefügt.
 - Im Fenster „Einstellungen“ wurde die Auswahl der Quelldatei 
 über „Explorer“ hinzugefügt
+
+
+
+BirthDays_Gadget_v1.4 (06.2024)
+
+Aktualisieren Sie das Desktop-Widget für Windows, um Geburtstage anzuzeigen
+Ihre Verwandten, Freunde und Kollegen.
+- Problem bei der Suche nach neuesten Versionen behoben.
+- Im Fenster „Einstellungen“ wurde die Möglichkeit hinzugefügt, den Farbstil (Dunkel – Hell) zu ändern.
+- Im Fenster „Einstellungen“ wurde die Möglichkeit hinzugefügt, das Farbschema (Monochrom – Farbe) zu ändern.
+- Ein „Tabellen“-Fenster hinzugefügt, in dem Sie Daten aus der heruntergeladenen CSV-Datei anzeigen und bearbeiten können. Mit dem Programm können Sie Namen und Geburtsdaten direkt in der Benutzeroberfläche schnell finden und ändern.

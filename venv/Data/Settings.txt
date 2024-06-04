@@ -4,3 +4,5 @@ Path ./Data/Dates.csv
 Freq 7200000
 StartUp 0
 AutoUpdate 0
+Style 1
+Color 1

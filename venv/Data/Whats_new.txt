@@ -13,6 +13,8 @@ import names and dates as a list at once.
 the "Update" button.
 - You can close the widget using the context menu in the tray.
 
+
+
 BirthDays_Gadget_v1.3 (10.2023)
 
 Update the desktop widget for Windows to display the birthdays of your relatives,
@@ -30,3 +32,14 @@ has been added.
 on GitHubhas been added.
 - In the "Settings" window, selecting the source file using 
 "Explorer" has been added.
+
+
+
+BirthDays_Gadget_v1.4 (06.2024)
+
+Updated desktop widget for Windows, to display birthdays of
+your relatives, friends and colleagues.
+- Fixed the problem with checking for new versions.
+- Added the ability to change the color style (Dark - Light) in the "Settings" window.
+- Added the ability to change the color scheme (Monochrome - Color) in the "Settings" window.
+- Added the "Sheet" window, where you can view and adjust data from the downloaded CSV file. The program allows you to quickly find, change names and dates of birth directly in the interface.

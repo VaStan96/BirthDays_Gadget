@@ -9,6 +9,7 @@ LangDict = {
 'AddTip':['Add a new birthday to the list', 'Fügen Sie der Liste einen neuen Geburtstag hinzu', 'Добавить новую дату в список'],
 'RefreschTip':['Refresh gadget window', 'Gadget-Fenster aktualisieren', 'Обновить окно'],
 'InfoTip':['Information about the gadget, what''s new?', 'Informationen zum Gadget, was gibt es Neues?', 'Информация о гаджете, Что нового?'],
+'ListTip':['Open a list with all birthdays','Öffnen Sie eine Liste mit allen Geburtstagen','Открыть список всех дат'],
 'SetTip':['Gadget settings', 'Gadget-Einstellungen', 'Настройки гаджета'],
 'AddLabel':['Add', 'Hinzufügen', 'Добавить'],
 'AddLabel2':['Adding in file: ', 'Datei hinzufügen: ', 'Добавить в файл'],
@@ -36,7 +37,18 @@ LangDict = {
 'NewVerTitle':['BirthDays_Gadjet! A new version!', 'BirthDays_Gadjet! Eine neue Version!', 'BirthDays_Gadjet! Новая версия!'],
 'NewVerText':['An update has arrived!<br>You can download the latest version from the link:<br>', 'Ein Update ist da!<br>Sie können die neueste Version über den Link herunterladen:<br>', 'Появилось обновление!<br>Вы можете скачать свежую версию по ссылке:<br>'],
 'UpdateTimeWord':[['1 Hour', '2 Hour', '6 Hour', '12 Hour', '1 Day'], ['1 Stunde', '2 Stunde', '6 Stunde', '12 Stunde', '1 Tag'], ['1 Час', '2 Часа', '6 Часов', '12 Часов', '1 День']],
-'UpdateTimeNum':[[3600000, 7200000, 21600000, 43200000, 86400000]],
+'UpdateTimeNum':[[3600000, 7200000, 21600000, 43200000, 86400000]],#10000-10sec
 'CSVErrorText':['Check your CSV file!','Überprüfen Sie Ihre CSV-Datei!','Проверьте ваш CSV-файл!'],
-'CSVErrorTitle':['Error!','Fehler!','Ошибка!']
+'CSVErrorTitle':['Error!','Fehler!','Ошибка!'],
+'ListSearchTip':['  Search','  Suchen','  Поиск'],
+'ListSaveTitle':['Save changes?','Änderungen speichern?','Сохранить изменения?'],
+'ListSaveText':['Save the changes you made to the source file?\nIt will be impossible to undo the changes!','Möchten Sie die von Ihnen vorgenommen Ändurungen an der Originaldatei speichern?\nSie können die Änderungen nicht rückgängig machen!','Сохранить изменения внесенные Вами в исходный файл?\nОтменить изменения будет невозможно!'],
+'RewriteTrue':['Data saved successfully!','Daten erfolgreich gespeichert!','Данные успешно сохранены!'],
+'RewriteFalse':['Error! Data not saved!','Fehler! Daten nicht gespeichert!','Ошибка! Данные не сохранены!'],
+'RewriteFalseInRow':['Error! Data not saved!\nCheck the data in the line ','Fehler! Daten nicht gespeichert!\nÜberprüfen Sie die Daten in der Zeile ','Ошибка! Данные не сохранены!\nПроверьте данные в строке '],
+'SwitchTitle':['Choose a gadget style','Wählen Sie einen Gadget-Stil','Выберите стиль гаджета'],
+'Switch1Tip':['Switching will change the style of your gadget (light or dark)','Durch den Wechsel ändert sich der Stil Ihres Gadgets (hell oder dunkel)','Переключение изменит стиль вашего гаджета (светлый или темный)'],
+'Switch2Tip':['Switching will change the style of your gadget (monochrome or color)','Durch den Wechsel ändert sich der Stil Ihres Gadgets (monochrom oder farbig)','Переключение изменит стиль вашего гаджета (монохром или цветной)'],
+'TableViewTip':['You can correct the data by changing it in the table and clicking on the "Save" button','Sie können die Daten korrigieren, indem Sie sie in der Tabelle ändern und auf die Schaltfläche „Speichern“ klicken','Вы можете скорректировать данные изменив их в таблице и нажав на кнопку "Сохранить"'],
+'Link':['New version of BirthDay_Gadget','Neue Version von BirthDay_Gadget','Новая версия BirthDay_Gadget']
 }
