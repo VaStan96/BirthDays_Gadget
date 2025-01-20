@@ -44,3 +44,11 @@ Ihre Verwandten, Freunde und Kollegen.
 - Im Fenster „Einstellungen“ wurde die Möglichkeit hinzugefügt, den Farbstil (Dunkel – Hell) zu ändern.
 - Im Fenster „Einstellungen“ wurde die Möglichkeit hinzugefügt, das Farbschema (Monochrom – Farbe) zu ändern.
 - Ein „Tabellen“-Fenster hinzugefügt, in dem Sie Daten aus der heruntergeladenen CSV-Datei anzeigen und bearbeiten können. Mit dem Programm können Sie Namen und Geburtsdaten direkt in der Benutzeroberfläche schnell finden und ändern.
+
+
+
+BirthDays_Gadget_v1.5 (01.2025)
+
+Aktualisieren Sie das Desktop-Widget für Windows, um Geburtstage anzuzeigen
+Ihre Verwandten, Freunde und Kollegen.
+- Das Problem mit der Neuberechnung der Tage vor/nach dem Geburtstag unter Berücksichtigung des Wechsels zwischen Schaltjahren und Nicht-Schaltjahren wurde behoben.

@@ -38,12 +38,20 @@ def pars_csv(path, language):
 
 def sort_csv(path, language):
     Birthdays = pars_csv(path, language)
-    days_in_year = 365 if not calendar.isleap(datetime.date(datetime.today()).year) else 366
     sort_data = sorted(Birthdays, key=lambda x: x[2])
-    minus = [[i[0], i[1], i[2] - days_in_year + 1, i[3]-1] for i in sort_data[-2:]]
-    data = list(reversed(minus + sort_data[:5]))
+
+    updated = []
+    for i in sort_data[-2:]:
+        birthday_date = datetime(datetime.today().year, int(i[1].split('.')[1]), int(i[1].split('.')[0])).date()
+        if birthday_date > datetime.date(datetime.today()):
+            birthday_date = datetime(datetime.today().year - 1, int(i[1].split('.')[1]), int(i[1].split('.')[0])).date()
+
+        days_since_birthday = (datetime.date(datetime.today()) - birthday_date).days
+        updated.append([i[0], i[1], -days_since_birthday, i[3] - 1])
+
+    data = list(reversed(updated + sort_data[:5]))
     data = [[i[0],i[1],i[3],i[2]] for i in data]
     return data
 
 # if __name__ == '__main__':
-#     print(sort_csv('Dates.csv'))
+#     print(sort_csv('.\\Data\\Dates.csv', 0))

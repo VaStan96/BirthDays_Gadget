@@ -12,8 +12,6 @@ import autoUpdate as AutoUpdatePy
 import CSVrewrite as CSV_ReWritePy
 import re
 
-#import Breeze_Style.breeze_resources
-
 def setStyle():
     if gadgetStyle == 0:
         style = QFile('./Data/DarkStyle.css')
